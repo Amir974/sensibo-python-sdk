@@ -16,11 +16,8 @@ With that CSV file you can later analyze the data using charts, pivots etc :)
 
 # STEP 1 - Create your Config.INI 
   Create this file in the same directory where the script is saved
-  the file should have the 3 following lines:
-  
-[SectionOne]
-SensiboAPIkey: XXXXXXX
-LogFile: C:\Users\User\Documents\GitHub\sensibo-python-sdk\Sensibo_Log.csv
+  sample of the config.ini can be found in "configsample.rar"
+
 
 # STEP 2 - Create a task to repeatedly log the data
   Assuming you want to keep track of your data over a period of time, you'll need to create a task to launch the script every XX amount of minutes and do it's thing...
