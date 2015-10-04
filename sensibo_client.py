@@ -50,4 +50,11 @@ if __name__ == "__main__":
     print "Last AC change %(success)s and was caused by %(cause)s" % { 'success': 'was successful' if last_ac_state['status'] == 'Success' else 'failed', 'cause': last_ac_state['reason'] } 
     print "and set the ac to %s" % str(last_ac_state['acState'])
     print "Change AC state of %s" % pod_uids[0]
-    client.pod_change_ac_state(pod_uids[0], True, 23, 'cool', 'auto')
+    client.pod_change_ac_state(pod_uids[0], True, 23, 'cool', 'auto')	
+	"""	print last_ac_state['status']
+		print last_ac_state['reason']
+		print last_ac_state['acState']['on']
+		print last_ac_state['acState']['targetTemperature']
+		print last_ac_state['acState']['mode']
+		print last_ac_state['acState']['fanLevel']	
+	"""
